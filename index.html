@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0a5decb138.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Picture Generator With Mode</title>
+  </head>
+  <body>
+    <section id="buttons">
+      <h2>Pets Picture Generator</h2>
+      <!-- Rounded switch -->
+
+      <div class="slider-container">
+        <div class="mode-container">
+          <i class="fa-solid fa-shield-cat"></i>
+          <span>Cat Mode</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <div class="mode-container">
+          <i class="fa-solid fa-shield-dog"></i>
+          <span>Dog Mode</span>
+        </div>
+      </div>
+      <button class="btn" id="btn">Show Me Cats!</button>
+    </section>
+    <section id="pictures"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
