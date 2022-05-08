@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/0a5decb138.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Picture Generator With Mode</title>
   </head>
   <body>
-    <section id="pictures">
+    <section class="section-pictures">
       <h2>Pets Picture Generator</h2>
+      <div class="loader" id="loader" hidden>
+        <img id="loader-img" src="loading-cat.svg" alt="Loading" />
+        <span class="loader-text" id="loader-text">Loading...</span>
+      </div>
       <div class="photo-holder">
+        <i class="fa-solid fa-image" id="holder-image"></i>
         <img class="photo" id="photo" src="" alt="" />
       </div>
     </section>
-    <section id="buttons">
-      <!-- Rounded switch -->
+    <section>
       <div class="container">
         <div class="mode-container" id="cat-container">
           <i class="fa-solid fa-shield-cat"></i>
@@ -36,6 +41,5 @@
       </div>
       <button class="btn" id="btn">Show Me Cats!</button>
     </section>
-    <script src="script.js"></script>
   </body>
 </html>
