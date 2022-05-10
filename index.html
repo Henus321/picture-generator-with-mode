@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/0a5decb138.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="script.js"></script>
     <title>Picture Generator With Mode</title>
   </head>
@@ -26,7 +28,12 @@
     </section>
     <section>
       <div class="container">
-        <div class="mode-container" id="cat-container">
+        <div
+          class="mode-container"
+          id="cat-container"
+          data-aos="fade-right"
+          data-delay="400"
+        >
           <i class="fa-solid fa-shield-cat"></i>
           <span>Cat Mode</span>
         </div>
@@ -34,7 +41,12 @@
           <input type="checkbox" />
           <span class="slider round"></span>
         </label>
-        <div class="mode-container transparent" id="dog-container">
+        <div
+          class="mode-container transparent"
+          id="dog-container"
+          data-aos="fade-left"
+          data-delay="400"
+        >
           <i class="fa-solid fa-shield-dog"></i>
           <span>Dog Mode</span>
         </div>
